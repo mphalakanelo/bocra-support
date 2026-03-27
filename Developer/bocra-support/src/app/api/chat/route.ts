@@ -1,7 +1,7 @@
-//import Anthropic from '@anthropic-ai/sdk'
+import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest } from 'next/server'
 
-//const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const BOCRA_SYSTEM = `You are BOCRA's official AI support assistant for the Botswana Communications Regulatory Authority.
 
