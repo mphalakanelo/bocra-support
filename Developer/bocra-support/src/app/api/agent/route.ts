@@ -1,8 +1,8 @@
-//import Anthropic from '@anthropic-ai/sdk'
+import Anthropic from '@anthropic-ai/sdk'
 import { NextRequest, NextResponse } from 'next/server'
 import { createServiceSupabaseClient } from '@/lib/supabase/server'
 
-//const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
 
 const AGENTS = [
   { id: 'KM', name: 'Kagiso Molebatsi', role: 'Telecom Specialist', color: '#1a5ccc' },
